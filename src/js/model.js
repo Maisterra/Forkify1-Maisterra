@@ -2,6 +2,7 @@
 
 export const state = {
     recipe: {},
+    function loadRecipe =
   };
   
   export const loadRecipe = async function (id) {

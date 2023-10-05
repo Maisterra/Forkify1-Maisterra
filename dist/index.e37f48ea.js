@@ -700,9 +700,9 @@ console.log("Estoy despu\xe9s del insert");
     renderSpiner(recipeContainer);
     //fetch (`https://forkify-api.herokuapp.com/api/v2/recipes/$(id)`)
     fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`).then((r)=>r.json()).then((d)=>{
-        printData(d).catch((error)=>{
-            console.error("Error", error);
-        });
+        printData(d);
+    }).catch((error)=>{
+        console.error("Error", error);
     });
 }
 function renderSpiner(parentEl) {
